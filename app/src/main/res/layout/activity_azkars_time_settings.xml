@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appns="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/layoutbg"
+    tools:context="ru.ironcodes.islamicwikipedia.AzkarsTimeSettingsActivity">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        appns:lottie_autoPlay="true"
+        appns:lottie_fileName="stopwatch.json"
+        appns:lottie_loop="true" />
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@xml/raduis">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:alignmentMode="alignBounds"
+            android:columnCount="1"
+            android:columnOrderPreserved="false"
+            android:rowCount="2">
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:textColor="#ffffff"
+        android:text="@string/Current_Frequency"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:textColor="#ffffff"
+        android:text="@string/Chose_Frequency"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+        </GridLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RadioButton
+            android:id="@+id/Radio_5_m"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/Radio5txt"
+            android:textColor="#ffffff"/>
+
+
+        <RadioButton
+            android:id="@+id/Radio_15_m"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/Radio15txt"
+            android:textColor="#ffffff"/>
+
+
+        <RadioButton
+            android:id="@+id/Radio_60_m"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/Radio60txt"
+            android:textColor="#ffffff"/>
+
+
+        <RadioButton
+            android:id="@+id/Radio_120_m"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/Radio120txt"
+            android:textColor="#ffffff"/>
+
+
+        <RadioButton
+            android:id="@+id/Radio_180_m"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/Radio180txt"
+            android:textColor="#ffffff"/>
+
+
+
+            <com.varunest.sparkbutton.SparkButton
+                android:layout_gravity="center"
+                android:layout_marginTop="-10dp"
+                android:id="@+id/donebut"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                appns:sparkbutton_activeImage="@drawable/done"
+                appns:sparkbutton_iconSize="70dp"
+                appns:sparkbutton_inActiveImage="@drawable/doneinact"
+                appns:sparkbutton_primaryColor="@color/colorLavander"
+                appns:sparkbutton_secondaryColor="@color/secondary_color" />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

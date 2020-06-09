@@ -1,0 +1,138 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appns="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background ="@drawable/layoutbg"
+    android:gravity="center"
+    tools:context="ru.ironcodes.islamicwikipedia.AzkarsActivity"   >
+
+
+
+
+    <LinearLayout
+        android:orientation= "vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:gravity="center">
+
+
+
+
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@xml/raduis">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:id="@+id/imgcon"
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="20dp"
+                            android:contentDescription="@string/imagebset"
+                            android:src="@mipmap/azkar" />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/textazkar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="Medium Text"
+                        android:textAlignment="center"
+                        android:textColor="#FBFCFC"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textAuth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="end"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textColor="#75C21C"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+</LinearLayout>
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:id="@+id/btn_next"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:padding="5dp"
+                android:background="@drawable/nextright" />
+
+            <ImageButton
+                android:id="@+id/btn_prev"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:padding="5dp"
+                android:background="@drawable/leftnext"
+                android:contentDescription="@string/imagev" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layAdsazkar"
+            android:layout_marginTop="@dimen/_66sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

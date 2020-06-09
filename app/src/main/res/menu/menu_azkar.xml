@@ -1,0 +1,46 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ru.ironcodes.islamicwikipedia.AzkarActivity">
+
+    <item
+        android:id="@+id/menu_overflow"
+        android:icon="@drawable/more"
+        app:showAsAction="always"
+        android:title="">
+
+    <menu>
+    <item
+        android:id="@+id/action_share"
+        android:icon="@mipmap/social_share"
+        app:showAsAction="ifRoom"
+        android:title="@string/action_share"/>
+
+
+    <item
+        android:id="@+id/copy"
+        android:icon="@mipmap/ic_action_copy"
+        app:showAsAction="ifRoom"
+        android:title="@string/action_copy"/>
+
+
+
+
+    <item
+        android:id="@+id/action_favorite"
+        android:icon="@mipmap/not_fav"
+        app:showAsAction="always"
+        android:title="@string/action_add_to_favorites"/>
+
+
+
+
+    </menu>
+
+
+
+
+</item>
+
+
+</menu>

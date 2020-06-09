@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--style 3-->
+    <color name="menuNavigation3colorPrimary">#37386d</color>
+    <color name="menuNavigation3colorPrimaryDark">#334573</color>
+    <color name="menuNavigation3colorAccent">#558B2F</color>
+    <color name="menuNavigation3menuBg">#558B2F</color>
+    <color name="colorPrimary">#37386d</color>
+    <color name="colorPrimaryDark">#37386d</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBlueJeans">#509CEC</color>
+    <color name="colorLavander">#AC92EC</color>
+    <color name="colorMint">#48CFAD</color>
+    <color name="primary_color">#FFFFC107</color>
+    <color name="secondary_color">#ff229c</color>
+    <color name="graylight">#f7f4f2</color>
+</resources>

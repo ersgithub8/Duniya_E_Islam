@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layoutbg"
+    android:orientation="vertical">
+
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="413dp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:paddingLeft="@dimen/_6sdp"
+        android:paddingRight="@dimen/_6sdp"
+        android:progressDrawable="@drawable/seekbar_progressbar"
+        android:thumb="@drawable/shine_btn1" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_220sdp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/quranpro"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp" />
+
+
+    <ImageView
+        android:id="@+id/btnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="173dp"
+        android:layout_marginLeft="173dp"
+        android:layout_marginTop="462dp"
+        app:srcCompat="@drawable/img_btn_play" />
+
+
+    <TextView
+        android:id="@+id/quranCurrentDurationLabel1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="414dp"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:text="00.00"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/quranTotalDurationLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="414dp"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="00.00"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/img_equilizer"
+        android:layout_width="@dimen/_64sdp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="58dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="480dp"
+        android:layout_weight="1"
+        android:visibility="visible" />
+
+
+    <TextView
+        android:id="@+id/quranCurrentDurationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="262dp"
+        android:layout_marginLeft="262dp"
+        android:layout_marginTop="484dp"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="Text"
+        android:background="#52011A33"
+        android:textColor="#F2F7F2"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/surahname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="137dp"
+        android:layout_marginLeft="137dp"
+        android:layout_marginTop="367dp"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:text="SurahName"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>

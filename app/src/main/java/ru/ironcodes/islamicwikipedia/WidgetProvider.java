@@ -1,0 +1,64 @@
+package ru.ironcodes.islamicwikipedia;
+
+import android.app.PendingIntent;
+import android.appwidget.AppWidgetManager;
+import android.appwidget.AppWidgetProvider;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
+import android.widget.RemoteViews;
+
+import ru.ironcodes.islamicwikipedia.R;
+
+
+
+/**
+ * Created by IronCodes on 11.04.2019.
+ * Website : http://ironcodes.tech/
+ * "All rights reserved ©2014-2019"
+ * Support & Emails : dev@ironcodes.tech , ironcodesdev@gmail.com
+ */
+
+
+public class WidgetProvider extends AppWidgetProvider {
+
+    private Azkar cn;
+    private DataBaseHandler db;
+
+    @Override
+    public void onUpdate(Context context, AppWidgetManager appWidgetManager,
+                         int[] appWidgetIds) {
+        db = new DataBaseHandler(context.getApplicationContext());
+        // Get all ids
+        ComponentName thisWidget = new ComponentName(context,
+                WidgetProvider.class);
+        int[] allWidgetIds = appWidgetManager.getAppWidgetIds(thisWidget);
+        for (int widgetId : allWidgetIds) {
+            // create some random data
+            SharedPreferences preferences = PreferenceManager
+                    .getDefaultSharedPreferences(context);
+            int ID = preferences.getInt("id", MainActivity.IntialQteOfDayId);
+            cn = db.getAzkar(ID);
+
+            RemoteViews remoteViews = new RemoteViews(context.getPackageName(),
+                    R.layout.widget_layout);
+
+            // Set the text
+            remoteViews.setTextViewText(
+                    R.id.update,
+                    String.valueOf(cn.getAzkar() + "\n - " + cn.getName()
+                            + " -"));
+
+            // Register an onClickListener
+            Intent intent = new Intent(context, AzkarActivity.class);
+            intent.putExtra("id", ID);
+            intent.putExtra("mode", "zikerday");
+            PendingIntent pendingIntent = PendingIntent.getActivity(context, 0,
+                    intent, PendingIntent.FLAG_UPDATE_CURRENT);
+            remoteViews.setOnClickPendingIntent(R.id.update, pendingIntent);
+            appWidgetManager.updateAppWidget(widgetId, remoteViews);
+        }
+    }
+}
